@@ -1,1 +1,1 @@
-*.src/migrations/keys.rs
+.src/migrations/keys.rs
