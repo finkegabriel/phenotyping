@@ -11,3 +11,4 @@ for l in image:
     spec = plt.imshow(edges,cmap='gray')
     plt.savefig('data2.png')
     plt.show()
+    
