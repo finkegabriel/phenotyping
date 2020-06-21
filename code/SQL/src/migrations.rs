@@ -1,8 +1,8 @@
 use postgres::{Client, NoTls, Error};
+mod keys;
 
 pub fn migrate() -> Result<(), Error>{
-    let mut client = Client::connect("postgresql://postgres:password@127.0.0.1/phenotyping",NoTls)?;
-
+    let mut client = Client::connect(keys::sec(""),NoTls)?;
     client.batch_execute("
         CREATE TABLE IF NOT EXISTS plant (
             id              SERIAL PRIMARY KEY,
@@ -22,7 +22,7 @@ pub fn migrate() -> Result<(), Error>{
 }
 
 pub fn drop() -> Result<(), Error>{
-    let mut client = Client::connect("postgresql://postgres:password@127.0.0.1/phenotyping",NoTls)?;
+    let mut client = Client::connect(keys::sec(""),NoTls)?;
 
     client.batch_execute("drop table plant")?;
     client.batch_execute("drop table plant_types");
@@ -30,7 +30,7 @@ pub fn drop() -> Result<(), Error>{
 }
 
 pub fn seed() -> Result<(),Error>{
-   let mut client =  Client::connect("postgresql://postgres:password@127.0.0.1/phenotyping",NoTls)?; 
+   let mut client =  Client::connect(keys::sec(""),NoTls)?; 
 
     client.batch_execute("
      INSERT into plant_types (id,type) values('1','WOODCHIP');
