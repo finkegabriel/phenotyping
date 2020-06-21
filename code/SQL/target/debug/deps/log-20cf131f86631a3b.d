@@ -1,0 +1,9 @@
+/home/blujay/code/USDA/code/SQL/target/debug/deps/log-20cf131f86631a3b.rmeta: /home/blujay/.cargo/registry/src/github.com-1ecc6299db9ec823/log-0.4.8/src/lib.rs /home/blujay/.cargo/registry/src/github.com-1ecc6299db9ec823/log-0.4.8/src/macros.rs /home/blujay/.cargo/registry/src/github.com-1ecc6299db9ec823/log-0.4.8/src/serde.rs
+
+/home/blujay/code/USDA/code/SQL/target/debug/deps/liblog-20cf131f86631a3b.rlib: /home/blujay/.cargo/registry/src/github.com-1ecc6299db9ec823/log-0.4.8/src/lib.rs /home/blujay/.cargo/registry/src/github.com-1ecc6299db9ec823/log-0.4.8/src/macros.rs /home/blujay/.cargo/registry/src/github.com-1ecc6299db9ec823/log-0.4.8/src/serde.rs
+
+/home/blujay/code/USDA/code/SQL/target/debug/deps/log-20cf131f86631a3b.d: /home/blujay/.cargo/registry/src/github.com-1ecc6299db9ec823/log-0.4.8/src/lib.rs /home/blujay/.cargo/registry/src/github.com-1ecc6299db9ec823/log-0.4.8/src/macros.rs /home/blujay/.cargo/registry/src/github.com-1ecc6299db9ec823/log-0.4.8/src/serde.rs
+
+/home/blujay/.cargo/registry/src/github.com-1ecc6299db9ec823/log-0.4.8/src/lib.rs:
+/home/blujay/.cargo/registry/src/github.com-1ecc6299db9ec823/log-0.4.8/src/macros.rs:
+/home/blujay/.cargo/registry/src/github.com-1ecc6299db9ec823/log-0.4.8/src/serde.rs:
