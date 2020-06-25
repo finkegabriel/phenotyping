@@ -1,7 +1,5 @@
-#[macro_use]
 mod migrations;
 use std::io;
-
 
 fn main(){
     let mut input = String::new();
@@ -16,18 +14,15 @@ fn main(){
         match io::stdin().read_line(&mut input){
             Ok(n)=>{
                 println!("{}",input);
-
                 if input.contains("insert"){
                     println!("{}","insert into");
-                    //format!("{} ");
                 }
                 
                 if input.contains("delete"){
                     println!("{}","del");
                 }
-
                 if input.contains("quit"){
-                    println!("{}","bye");
+                    println!("{}","quit");
                     done = false;
                 }
                 input = "".to_string();
