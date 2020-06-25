@@ -25,6 +25,13 @@ fn main(){
                     println!("{}","quit");
                     done = false;
                 }
+                if input.contains("run up"){
+                    migrations::migrate();
+                    migrations::seed();
+                }
+                if input.contains("run down"){
+                    migrations::drop();
+                }
                 input = "".to_string();
             }
             Err(error) => println!("error: {}", error),
